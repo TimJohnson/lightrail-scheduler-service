@@ -4,8 +4,8 @@
   "description": "Starter project for an ES6 RESTful Express API",
   "main": "dist",
   "scripts": {
-    "dev": "nodemon -w src --exec \"babel-node src --presets es2015,stage-0\"",
-    "build": "babel src -s -D -d dist --presets es2015,stage-0",
+    "dev": "nodemon -w src --exec \"babel-node src --presets env\"",
+    "build": "babel src -s -D -d dist --presets env",
     "start": "node dist",
     "prestart": "npm run -s build",
     "test": "eslint src"
@@ -28,7 +28,7 @@
     "type": "git",
     "url": "git+https://github.com/developit/express-es6-rest-api.git"
   },
-  "author": "Jason Miller <jason@developit.ca>",
+  "author": "Tim Johnson",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.13.3",
@@ -42,9 +42,11 @@
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",
-    "babel-core": "^6.9.0",
-    "babel-preset-es2015": "^6.9.0",
-    "babel-preset-stage-0": "^6.5.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
     "eslint": "^3.1.1",
     "nodemon": "^1.9.2"
   },
