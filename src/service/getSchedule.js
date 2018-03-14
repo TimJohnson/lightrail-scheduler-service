@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 import moment from 'moment';
 
 export default (direction, routeDay) => {
-    let response = fetch(`http://wirelesscats.ridetransit.org/BusSchedules/Search/Schedule?routeCode=6199&routeDirection=${direction}&bookingId=70&routeType=${routeDay}`)
+    let response = fetch(`http://wirelesscats.ridetransit.org/BusSchedules/Search/Schedule?routeCode=6338&routeDirection=${direction}&bookingId=75&routeType=${routeDay}`)
         .then( res => res.json())
         .then( json => {
             let formattedResponse = {};
