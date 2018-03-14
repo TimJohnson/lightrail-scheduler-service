@@ -14,7 +14,7 @@ export default (direction, routeDay) => {
                 });
 
                 let midnight = moment('00:00', 'HH:mm');
-                let firstTrains = moment('05:00', 'HH:mm');
+                let firstTrains = moment('04:00', 'HH:mm');
 
                 let lateNightStops = formattedStops.filter(s => {
                     let momentStop = moment(s, 'HH:mm');
